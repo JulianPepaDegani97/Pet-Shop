@@ -1,0 +1,501 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root {
+    --light: #e2ecf0;
+    --grey: #8d99ae;
+    --primary: #ef233c;
+    --primaryHover: #d90429;
+    --dark: #2b2d42;
+}
+header {
+    height: 35vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    border-radius: 0px;
+    color:  var(--light);
+
+}
+
+header img {
+    height: 5rem;
+    border-radius: 20px;
+    margin-left: 3rem;
+    box-shadow: .5px .5px  5px 1px black;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+h3{
+    font-family: 'Oswald', sans-serif;
+}
+.text-muted {
+    color: var(--light);
+}
+
+p{
+    color: var(--light);
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 0;
+    align-self: flex-end;
+    
+}
+nav a {
+    background-color: var(--light);
+    
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+
+    font-size: smaller;
+    width: fit-content;
+}
+nav a:hover {
+    background-color: var(--dark);
+    color: var(--light)
+}
+.nav-link{
+    padding: .3rem .3rem;
+}
+ 
+.nav-link:hover {
+    color: var(--light) !important;
+    background-color: var(--dark) !important;
+
+} 
+.navbar-nav {
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 65vw;
+    
+}
+.navbar {
+    margin-bottom: 0;
+    background-color: var(--light);
+}
+.active {
+    text-decoration: underline;
+   
+}
+.card-img-top {
+    height: 30vh;
+  
+}
+body{
+    background-color:var(--primary)
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+.index {
+    background-image: url(../assets/tres.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    background-attachment: fixed;
+    
+}
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    justify-content: center;
+ 
+}
+
+#carouselExampleFade {
+    
+    width: 25vw;
+    height: 45vh;
+   
+    
+}
+.carousel-inner {
+    width: 100%;
+    height:100%;
+    box-shadow: .5px .5px  5px 1px black;
+}
+.carousel-item img{
+   
+    height: 50vh;
+}
+section h3 {
+    margin-top: 1rem;
+    margin-left: 1vw;
+    background-color: var(--secondary);
+    color: var(--light);
+    width: 85%;
+    text-align: center;
+    
+}
+.bienvenida {
+    width: 70%;
+    justify-content: center;
+    text-align: justify;
+    text-indent: .5vw;
+    color: var(--secondary);
+    font-weight: 400;
+    background-color: rgba(51, 53, 77, .7);
+    margin: 10rem 0;
+    border: .3px solid var(--dark);
+}
+.bienvenida p {
+    padding: 0;
+    margin: 1.5rem;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.carrusel {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.iframe {
+    
+    background-color: var(--light);
+    margin: 3rem 0;
+   
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+}
+.locacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.iframe h3 {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    background-color: var(--secondary);
+    color: var(--primary);
+    margin: 0;
+}
+iframe {
+    width: 30rem;
+    height: 15rem;
+    margin: 3rem 0;
+    box-shadow: .5px .5px  5px 1px var(--dark);
+    transition: .2s .1s;
+    background-color: var(--primary);
+}
+iframe:hover {
+    transform: scale(1.05);
+}
+.p-iframe p{
+    
+    font-weight: bold;
+    color: var(--dark);
+}
+.card {
+    height: 25rem;
+    margin-top: 3rem;
+    background-color: var(--light);
+    color: var(--dark);
+    box-shadow: .5px .5px  5px 1px var(--dark);
+    transition: .3s .1s;
+}
+.card:hover {
+    box-shadow: .5px .5px  5px 5px var(--light);
+    transform: scale(1.05);
+}
+.card img {
+    height: 65%;
+}
+.card p {
+    font-weight: 600;
+    color: var(--dark);
+}
+.card-body {
+    overflow-y: scroll;
+}
+.stock {
+    background-color: var(--primaryHover);
+    color: white !important;
+    width: fit-content;
+    padding: .1rem .3rem;
+    
+}
+.card-img-top{
+    border: .5px solid var(--light);
+}
+main h2 {
+    width: 100%;
+    text-align: center;
+}
+.card button {
+    background-color: rgba(34, 134, 34, .7);
+    color: white;
+    padding: .1rem .2rem;
+}
+.card button:hover {
+    background-color: rgba(11, 206, 11, 0.5);
+    color: white;
+    padding: .1rem .2rem;
+}
+.btn-whatsapp {
+    display:block;
+    width:70px;
+    height:70px;
+    color:#fff;
+    position: fixed;
+    right:20px;
+    bottom:20px;
+    border-radius:50%;
+    line-height:80px;
+    text-align:center;
+  
+}
+
+footer{
+ background-color: var(--dark);
+
+ 
+ display: flex;
+ flex-wrap: wrap;
+ 
+ color: var(--light);
+ width: 100%;
+
+}
+
+.containerContacto{
+ width: 40%;
+ 
+ margin-left: 10%;
+}
+
+.contacto{
+ font-size: 20px;
+ color: var(--light);
+}
+
+.titlecontacto{
+ font-size: 22px;
+}
+
+.numeros{
+ font-size: 25px;
+
+ margin-top: -1rem;
+ text-decoration: none;
+}
+
+.telwhatsapp {
+ text-decoration: none;
+ color: var(--dark);
+}
+
+
+
+.mediosDePago{
+    width: 40%;
+   
+    margin-left: 10%;
+}
+
+.titlemediosdepago{
+ font-size: 22px;
+ color:var(--dark);
+ margin-left: 0.5rem;             
+}
+
+
+
+.primeraFilaTarjetas > img{
+ margin-left: 0.5rem;
+ border-radius:10px;
+}
+
+.segundaFilaTarjetas > img{
+ margin-left: 0.5rem;
+ margin-top: 1rem;
+ border-radius:10px;
+}
+.stock-agotado {
+    background-color: var(--dark);
+    color: white !important;
+    width: fit-content;
+    padding: .1rem .3rem;
+   
+}
+.titulo{
+    text-align: center;
+    color: var(--light);
+    background-color: var(--secondary);
+    
+}
+form{
+    color: var(--light);
+    background-color: rgba(51, 53, 77, .7);
+    width: 100vh;
+    border: .3px solid var(--dark);
+    display:block;
+    padding: 0px;
+    box-shadow: .5px .5px  5px 1px var(--dark);
+    margin: 10rem;
+}
+.reset {
+    margin: .3rem 1rem;
+}
+.conten_form{
+    display: flex;
+    justify-content: center;
+    
+}
+.telwhatsapp{
+    color: white;
+}
+
+.div2{
+    display: none;
+}
+.div1{
+    display: inline;
+
+}
+.error{
+color: red;
+}
+.exito{
+    color: rgb(240, 232, 232);
+    
+    font-size:20px;
+    background-color: rgba(72, 122, 22, 0.7);
+   width: fit-content;
+}
+.form-control {
+    width: 30rem;
+}
+input, select, textarea, label{
+    border-radius: 0px;
+    margin: .3rem 1rem;
+}
+label{
+    font-size: x-large;
+
+}
+.boton{
+    color:var(--primary);
+    background-color:#dc2343;
+    padding: .1rem .1rem; 
+}
+.derechos {
+    color: var(--light);
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+table {
+    width: 75%;
+    border: 1px solid var(--dark);
+    background-color: var(--dark);
+    color: var(--light);
+    margin: 2rem;
+    
+}
+.h2Table {
+    margin-top: 4rem;
+    width: 100%;
+}
+.total {
+    background: linear-gradient(90deg, var(--primary) 50%, var(--dark));
+    font-weight: bold;
+}
+th {
+    background-color: var(--secondary);
+    color: var(--light);
+}
+.none {
+    display: none;
+}
+.trow {
+    cursor: pointer;
+    background-color: var(--light);
+    color: var(--dark);
+}
+.trow:hover {
+    background-color: rgba(216, 90, 90, .5);
+    color: white;
+}
+.farmacia {
+    background-color: var(--grey);
+    z-index: 1;
+}
+.espacioBlanco{
+    background-color: var(--light);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.tabla {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btnCompra{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  
+}
+.comprar {
+    background-color: var(--primary);
+    color: var(--light);
+    font-weight: bold;
+    padding: .1rem .3rem;
+}
+.prodStock {
+    text-decoration: underline;
+}
+
+#juguete {
+    width: 100%;
+    height: 60vh;
+
+    background-image: url(../assets/banner-juguete.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+
+}
+#farmacia-veterinaria{
+    width: 100%;
+    height: 60vh;
+
+    background-image: url(../assets/farmacia-veterinaria.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
