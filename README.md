@@ -1,0 +1,1 @@
+# Pet-Shop: Este fue el primer challenge que hicimos de forma grupal en el bootcamp, con el uso de HTML5, CSS3, Bootstrap, JavaScript y Vue 2. En la actualidad estoy pasando de Vue 2 a usar Vuex, Vue Router, Vue CLI, etc.
